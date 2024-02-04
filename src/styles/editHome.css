@@ -1,0 +1,40 @@
+
+.keyword{
+    position:absolute;
+    z-index:-222;
+    top:0px;
+    color:transparent;
+}
+
+
+.top-social-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    height: 60px;
+    max-width: 500px;
+    width: 100%;
+
+    margin: auto;
+}
+
+@media screen and (max-width:500px) {
+    .top-social-con{
+        height: 100px;
+    }
+}
+
+
+
+
+
+.top-text-outer{
+    height: 40px !important;
+
+    bottom: 20px;
+}
+.home-text a{
+    color: white;
+}
