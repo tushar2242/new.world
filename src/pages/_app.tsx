@@ -11,7 +11,11 @@ import '@/styles/owl.carousel.css'
 import '@/styles/owl.theme.default.css'
 // import '@/styles/style_1.css.map'
 import '@/styles/style_1.css'
-import '@/styles/media_query.css'
+import '@/styles/media_query.css';
+
+import '@/styles/_blog.scss';
+import '@/styles/footer.scss';
+
 
 
 export default function App({ Component, pageProps }: AppProps) {

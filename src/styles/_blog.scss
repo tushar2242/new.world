@@ -1,0 +1,359 @@
+
+    :root {
+    --primary: #551A8B;
+    /* Update primary color to a deep purple color */
+    --secondary: #FFEB3B;
+    /* Add a secondary color, in this case, a deep orange color */
+    }
+
+
+
+h1,
+h2,
+h3 {
+    color: var(--primary);
+    /* Use the primary color for heading text */
+}
+
+p {
+    color: #333;
+    /* Set a dark text color for paragraphs */
+}
+
+a {
+    color: var(--secondary);
+    /* Use the secondary color for links */
+    text-decoration: none;
+    /* Remove default underline from links */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover for links */
+}
+
+.button {
+    background-color: var(--primary);
+    /* Use the primary color for button backgrounds */
+    color: #fff;
+    /* Set text color for buttons to white */
+    padding: 10px 20px;
+    /* Add padding to buttons for a comfortable look */
+    border: none;
+    /* Remove button border */
+    cursor: pointer;
+    /* Change cursor to pointer on hover for buttons */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners on buttons */
+}
+
+.button:hover {
+    background-color: #329e89;
+    /* Darken the button color on hover */
+}
+
+
+/* Add more custom styles as needed */
+
+
+
+
+body{
+    font-family: Arial, sans-serif !important;
+}
+
+
+
+
+
+
+a{
+    color: rgb(85, 26, 139);
+}
+
+.blog-dtl-bg {
+   
+    padding: 10px;
+}
+
+.blg-dtl-boxvw {
+    background-color: white;
+    box-shadow: 2px 2px 40px 5px rgb(241, 241, 241);
+    padding: 20px;
+}
+
+.h1-heading-fntsz {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    letter-spacing: 0.75px;
+}
+
+.date-fntvw {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    color: rgb(124, 124, 124);
+}
+
+.para-fnt-szvw {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    color: rgb(83, 83, 83);
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.h3-fntsz-heading {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    border: solid 1px rgb(68, 67, 67);
+    padding: 10px;
+}
+
+.table-hd-fntsz {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    color: rgb(29, 29, 29);
+}
+
+.blg-dtl-img {
+    width: 100%;
+    height: 100%;
+}
+
+.blg-dtl-imgbx {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+}
+
+.search-blg-input {
+    border: solid 1px rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    width: 100%;
+
+}
+
+.search-iconbox {
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h5-tag-fntsz {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    color: rgb(24, 24, 24);
+}
+
+.linking-fnt-sz {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    margin-top: 20px;
+}
+
+.check-label {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    color: rgb(58, 57, 57)
+}
+
+.post-comment-btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    background-color: var(--secondary);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.social-icon-box {
+    /* background-color: rgb(0, 0, 0);
+    color: white; */
+
+    border: solid 1px #FFEA00;
+    
+    width: 40px;
+
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.social-icon-box:hover {
+    background-color: #FFFF00;
+    color: white;
+}
+
+@media only screen and (max-width:767.99px) {
+    .blg-dtl-boxvw {
+        padding: 10px;
+    }
+
+    .h1-heading-fntsz {
+        font-size: 26px;
+    }
+
+    .date-fntvw {
+        font-size: 13px;
+
+    }
+
+    .blg-dtl-imgbx {
+        height: auto;
+    }
+
+    .para-fnt-szvw {
+        font-size: 15px;
+    }
+
+    .h3-fntsz-heading {
+        font-size: 18px;
+    }
+
+    .h5-tag-fntsz {
+        font-size: 17px;
+    }
+
+    .table-hd-fntsz {
+        font-size: 16px;
+    }
+
+    .check-label {
+        font-size: 12px;
+    }
+
+    .blog-dtl-bg {
+        padding: 0px;
+    }
+}
+
+
+.banner-img{
+    /* max-width: 800px; */
+    width: 100%;
+    height: 400px;
+    
+    object-fit: contain;
+
+}
+
+
+.social-icon-outer{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.gallery-container {
+    padding-top: 0.9375rem;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+}
+
+.gallery-thumbnail {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card-icon-open {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s ease-in-out;
+}
+
+.card-icon-open:focus,
+.card-icon-open:hover {
+    color: #111;
+}
+
+.gallery-thumbnail:focus~.card-icon-open,
+.gallery-thumbnail:hover~.card-icon-open,
+.gallery-thumbnail~.card-icon-open:focus,
+.gallery-thumbnail~.card-icon-open:hover {
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 21, 21, .75);
+}
+
+.modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    padding: 0;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 1.5rem;
+    color: #111;
+    transition: all 0.25s ease-in-out;
+}
+
+.modal-close:focus,
+.modal-close:hover {
+    color: #fff;
+}

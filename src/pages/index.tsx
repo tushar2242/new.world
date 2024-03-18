@@ -1,14 +1,22 @@
 import React from 'react';
 import { NextPage } from 'next';
+import { useState } from 'react';
+import Footer from '@/components/footerComp/Footer';
+import Navbar from '@/components/NavbarComp/Navbar';
 
-function Index(){
-  return(
+
+const url = 'https://api.newworldtrending.com/blog/upload'
+
+function Index() {
+  return (
     <>
-    <Navbar/>
+      <Navbar />
 
-    <TrendingSection />
+      <TrendingSection />
 
-    <NewsComponent /> 
+      <NewsComponent />
+
+      <Footer />
     </>
   )
 }
@@ -20,95 +28,6 @@ export default Index;
 
 
 
-
-const Navbar: React.FC = () => {
-  return (
-    <>
-      <div className="container-fluid fh5co_header_bg">
-        <div className="container">
-          <div className="d-flex top-social-con">
-            <a href="#" className="color_fff ">
-              <i className="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Follow us on Social Media
-            </a>
-            <div className="d-inline-block fh5co_trading_posotion_relative">
-              <div className="footer_mediya_icon">
-                <div className="text-center d-inline-block">
-                  <a className="fh5co_display_table_footer" href="https://www.linkedin.com/in/newworld-trending-18b129286/">
-                    <div className="fh5co_verticle_middle"><i className="fa fa-linkedin"></i></div>
-                  </a>
-                </div>
-                <div className="text-center d-inline-block">
-                  <a href="https://www.facebook.com/profile.php?id=100095462762746" className="fh5co_display_table_footer">
-                    <div className="fh5co_verticle_middle">
-                      <i className="fa fa-brands fa-facebook"></i>
-                    </div>
-                  </a>
-                </div>
-                <div className="text-center d-inline-block">
-                  <a href="https://www.instagram.com/newworld.trending/" className="fh5co_display_table_footer">
-                    <div className="fh5co_verticle_middle">
-                      <i className=" fa fa-brands fa-instagram"></i>
-                    </div>
-                  </a>
-                </div>
-                <div className="text-center d-inline-block">
-                  <a href="https://github.com/newworldtrending" className="fh5co_display_table_footer">
-                    <div className="fh5co_verticle_middle">
-                      <i className="fa fa-brands fa-github"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-fluid bg-faded fh5co_padd_mediya padding_786">
-        <div className="container padding_786">
-          <nav className="navbar navbar-toggleable-md navbar-light ">
-            <button className="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="fa fa-bars"></span>
-            </button>
-            <a className="navbar-brand" href="#"><img src="images/logo.jpeg" alt="img" className="mobile_logo_width" /></a>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item ">
-                  <a className="nav-link" href="blog.html">Blog <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item ">
-                  <a className="nav-link" href="#">Single <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">World <span className="sr-only">(current)</span></a>
-                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                    <a className="dropdown-item" href="#">Action in</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community<span className="sr-only">(current)</span></a>
-                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                    <a className="dropdown-item" href="#">Action in</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li className="nav-item ">
-                  <a className="nav-link" href="Contact_us.html">Contact <span className="sr-only">(current)</span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </>
-  );
-};
 
 
 
@@ -212,4 +131,9 @@ const NewsComponent: NextPage = () => {
     </div>
   );
 };
+
+
+
+
+
 
